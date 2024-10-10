@@ -1,6 +1,5 @@
 const express=require('express');
 const { getProducts, newProduct, getSingleProduct, updateProduct, deleteProduct, createReview, getReviews, deleteReview } = require('../controllers/productController');
-const validateApiKey = require('../middlewares/validateApiKey');
 const { createApiKey } = require('../controllers/apiKeyController');
 const router=express.Router();
 const {isAuthenticatedUser, authorizeRoles}=require('../middlewares/authenticate')
